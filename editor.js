@@ -485,7 +485,7 @@ function load_code() {
     a = document.getElementById("generated_code").value
     b = a.slice(0,52)
     console.log("Loading: " + b);
-    if (b == "https://music-tier-list-maker.colind8.repl.co/?file=") {
+    if (b.toUpperCase() == "https://Music-Tier-List-Maker.colind8.repl.co/?file=".toUpperCase()) {
         //replace("https://Music-Tier-List-Maker.colind8.repl.co/?file=", "");
         c = a.substring(52);
         console.log(c);
