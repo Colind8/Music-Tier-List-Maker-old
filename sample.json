@@ -1,0 +1,371 @@
+{
+    "data": {
+        "title": "Rock Band Setlist Tier List",
+        "desc": "A tier list of every song in Rock Band! Pretty sweet if I do say so myself.",
+        "author": "Colind8",
+        "showrankings": "true"
+    },
+	"tiers": {
+		"S": [
+            {
+				"name": "Foo Fighters - Learn to Fly",
+				"link": "https://www.youtube.com/watch?v=1VQ_3sBZEm0&t=30s",
+				"desc": "It's just such an amazing song and it's incredibly fun to play!",
+				"image": "https://upload.wikimedia.org/wikipedia/en/8/8b/Foo_Fighters_-_There_Is_Nothing_Left_to_Lose.jpg"
+			},
+            {
+				"name": "Metallica - Enter Sandman",
+				"link": "https://www.youtube.com/watch?v=CD-E-LDc384",
+				"desc": "My all-time favorite Metallica song.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Metallica_-_Enter_Sandman_cover.jpg/220px-Metallica_-_Enter_Sandman_cover.jpg"
+			},
+            {
+				"name": "SoundGarden - Black Hole Sun",
+				"link": "https://www.youtube.com/watch?v=3mbBbFH9fAg",
+				"desc": "Has the power to put anyone into a chance with its wicked guitar and heavenly singing",
+				"image": "https://upload.wikimedia.org/wikipedia/en/3/3a/Superunknown.jpg"
+			},
+            {
+				"name": "Faith No More - Epic",
+				"link": "https://www.youtube.com/watch?v=ZG_k5CSYKhg",
+				"desc": "An incredibly fun song with an absolutely beautiful ending",
+				"image": "https://upload.wikimedia.org/wikipedia/en/8/89/The_Real_Thing_album_cover.jpg"
+			},
+            {
+				"name": "Coheed and Cambria - Welcome Home",
+				"link": "https://www.youtube.com/watch?v=n0H3RlaQVrM",
+				"desc": "You can just FEEL the emotion penetrating your earholes.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/5/59/Good_Apollo.jpg"
+			}
+		],
+		"A": [
+            {
+				"name": "Rush - Tom Sawyer",
+				"link": "https://www.youtube.com/watch?v=auLBLk4ibAk",
+				"desc": "It places you into a trance-like state as you learn the story of Tom Sawyer... I think",
+				"image": "https://upload.wikimedia.org/wikipedia/en/4/4a/Moving_Pictures.jpg"
+			},
+            {
+				"name": "Blue Oyster Cult - (Don't Fear) The Reaper",
+				"link": "https://www.youtube.com/watch?v=Dy4HA3vUv2c",
+				"desc": "A majestic song with great singing.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/BlueOysterCultAgentsofFortune.jpg/220px-BlueOysterCultAgentsofFortune.jpg"
+			},
+            {
+				"name": "Deep Purple - Highway Star",
+				"link": "https://www.youtube.com/watch?v=W2BO3UTOhZ8",
+				"desc": "This song is a RIDE!",
+				"image": "https://upload.wikimedia.org/wikipedia/en/0/00/Machine_Head_album_cover.jpg"
+			},
+            {
+				"name": "Weezer - Say It Ain't So",
+				"link": "https://www.youtube.com/watch?v=ENXvZ9YRjbo",
+				"desc": "An insanely cool song.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Weezer_-_Blue_Album.png/220px-Weezer_-_Blue_Album.png"
+			},
+            {
+				"name": "Radiohead - Creep",
+				"link": "https://www.youtube.com/watch?v=zFYEYRcjK2g",
+				"desc": "An incredibly emotional song that really makes you feel something.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/0/0f/Radiohead.pablohoney.albumart.jpg"
+			},
+            {
+				"name": "Bang Camaro - Pleasure (Pleasure)",
+				"link": "https://www.youtube.com/watch?v=WR5JLRIbJ-Y",
+				"desc": "It's basically the theme song of Rock Band, obviously it's great.",
+				"image": "https://f4.bcbits.com/img/a0031808931_5.jpg"
+			}
+		],
+        "B": [
+            {
+				"name": "Nine Inch Nails - The Hand That Feeds",
+				"link": "https://www.youtube.com/watch?v=xwhBRJStz7w",
+				"desc": "Really cool song with great bass.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/e/e0/Nine_Inch_Nails_-_With_Teeth.png"
+			},
+            {
+				"name": "Boston - Foreplay / Long Time",
+				"link": "https://www.youtube.com/watch?v=TnwqUEelQjE",
+				"desc": "This song takes such a long time, but that's okay because it's great either way!",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/BostonBoston.jpg/220px-BostonBoston.jpg"
+			},
+            {
+				"name": "Bon Jovi - Wanted Dead Or Alive",
+				"link": "https://www.youtube.com/watch?v=xTTZQp5xKyg",
+				"desc": "Every time I hear it I think of that fishing show on Discovery...",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Bon_jovi_slippery_when_wet.jpg/220px-Bon_jovi_slippery_when_wet.jpg"
+			},
+            {
+				"name": "Mountain - Mississippi Queen",
+				"link": "https://www.youtube.com/watch?v=VbP4qf8PjfI",
+				"desc": "Obviously one of the most iconic Rock Band/Guitar Hero songs. Hot take, but I think the wave group version is better than the actual song don't @ me.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/f/f2/Mountainclimbing1970.jpg"
+			},
+            {
+				"name": "Black Sabbath - Paranoid",
+				"link": "https://www.youtube.com/watch?v=I-ZQZC4lUfk",
+				"desc": "I mean, it's paranoid. It rocks. Wavegroup version is worse.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Black_Sabbath_-_Paranoid.jpg/220px-Black_Sabbath_-_Paranoid.jpg"
+			},
+            {
+				"name": "The Killers - When You Were Young",
+				"link": "https://youtu.be/ff0oWESdmH0?t=88",
+				"desc": "An epic song with great lyrics",
+				"image": "https://upload.wikimedia.org/wikipedia/en/8/8d/The_Killers_-_Sam%27s_Town.png"
+			},
+            {
+				"name": "Queens of The Stone Age",
+				"link": "https://youtu.be/DcHKOC64KnE?t=7",
+				"desc": "A cool song with WICKED guitar parts",
+				"image": "https://upload.wikimedia.org/wikipedia/en/0/01/Queens_of_the_Stone_Age_-_Songs_for_the_Deaf.png"
+			},
+            {
+				"name": "Death of the Cool - Can't Let Go",
+				"link": "https://www.youtube.com/watch?v=yR6NF1xh8tI",
+				"desc": "Probably the 2nd theme song of Rock Band.",
+				"image": "https://is3-ssl.mzstatic.com/image/thumb/Music/3d/3b/0f/mzi.hgbajxrd.tif/500x500bb.webp"
+			},
+            {
+				"name": "The Strokes - Reptilia",
+				"link": "https://www.youtube.com/watch?v=b8-tXG8KrWs",
+				"desc": "Who doesn't just LOVE this song.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/9/9f/Room_on_Fire_cover.jpg"
+			},
+            {
+				"name": "Crooked X - Nightmare",
+				"link": "https://www.youtube.com/watch?v=_Ifeo3F4Avo",
+				"desc": "A really cool song. The main riff is really great.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/1/18/Crookedx_album2.jpg"
+			},
+            {
+				"name": "Anarchy Club - Blood Doll",
+				"link": "https://www.youtube.com/watch?v=SaHLxDHOXgE",
+				"desc": "Wicked.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/5/59/Single_drop_of_red.JPG"
+			},
+            {
+				"name": "Red Hot Chili Peppers - Dani California",
+				"link": "https://www.youtube.com/watch?v=Sb5aq5HcS1A",
+				"desc": "A great song that flows well with epic guitar and bass parts.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e6/Stadiumarcadium.jpg/220px-Stadiumarcadium.jpg"
+			},
+            {
+				"name": "The Sweet - Ballroom Blitz",
+				"link": "https://www.youtube.com/watch?v=mPQPdYttl7U",
+				"desc": "Isn't it funny how multiple songs from this game are on Regular Show?",
+				"image": "https://upload.wikimedia.org/wikipedia/en/a/ac/SweetDesolationBoulevardOriginal.jpg"
+			},
+            {
+				"name": "Nirvana - In Bloom",
+				"link": "https://www.youtube.com/watch?v=QUZrOaYS2kM",
+				"desc": "Probably the best Nirvana song too don't @ me",
+				"image": "https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg"
+			},
+            {
+				"name": "The Rolling Stones - Gimme Shelter",
+				"link": "https://www.youtube.com/watch?v=QeglgSWKSIY",
+				"desc": "Epic.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/c/c0/LetitbleedRS.jpg"
+			},
+            {
+				"name": "Flyleaf - I'm So Sick",
+				"link": "https://www.youtube.com/watch?v=iWIADZKU9dw",
+				"desc": "Women, amiright?... Excellent song!",
+				"image": "https://upload.wikimedia.org/wikipedia/en/8/85/Flyleaf-Flyleaf.jpg"
+			},
+            {
+				"name": "The Clash - Should I Stay or Should I Go",
+				"link": "https://www.youtube.com/watch?v=BN1WwnEDWAM",
+				"desc": "A very fun song!",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/The_Clash_-_Combat_Rock.jpg/220px-The_Clash_-_Combat_Rock.jpg"
+			}
+		],
+        "C": [
+            {
+				"name": "Hole - Celebrity Skin",
+				"link": "https://www.youtube.com/watch?v=O3dWBLoU--E",
+				"desc": "Another fun song",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Hole_-_Celebrity_Skin_%28album%29.png/220px-Hole_-_Celebrity_Skin_%28album%29.png"
+			},
+            {
+				"name": "Garbage - I think I'm Paranoid",
+				"link": "https://www.youtube.com/watch?v=ypr18UmxOas",
+				"desc": "This song has great riffs.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/3/34/Garbage_-_Version_2.0.png"
+			},
+            {
+				"name": "Tijuana Sweetheart - Seven",
+				"link": "https://www.youtube.com/watch?v=LRtpRFFs3ug",
+				"desc": "Another another fun song. It keeps it going the whole song. Fun fact, the band members are employees at Harmonix",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Public_Display_of_Infection.jpg/220px-Public_Display_of_Infection.jpg"
+			},
+            {
+				"name": "TheWho - Won't Get Fooled Again",
+				"link": "https://www.youtube.com/watch?v=_NzLs-xSss0",
+				"desc": "Has a great intro and the rest of the song is okay.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Whosnext.jpg/220px-Whosnext.jpg"
+			},
+            {
+				"name": "David Bowie - Suffragette City",
+				"link": "https://www.youtube.com/watch?v=rq1bcVOmyjw",
+				"desc": "Pretty good.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/ZiggyStardust.jpg/220px-ZiggyStardust.jpg"
+			},
+            {
+				"name": "OK Go - Here It Goes Again",
+				"link": "https://www.youtube.com/watch?v=dTAAsCNK7RA",
+				"desc": "These guys make AMAZING music videos",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Oh_No_%28OK_Go_album_-_cover_art%29.jpg/220px-Oh_No_%28OK_Go_album_-_cover_art%29.jpg"
+			},
+            {
+				"name": "The Smashing Pumpkins - Cherub Rock",
+				"link": "https://www.youtube.com/watch?v=q-KE9lvU810",
+				"desc": "A good song.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/4/44/SmashingPumpkins-SiameseDream.jpg"
+			},
+            {
+				"name": "Jet - Are You Gonna Be My Girl",
+				"link": "https://www.youtube.com/watch?v=tuK6n2Lkza0",
+				"desc": "Probably too low.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Jet_-_Get_Born.jpg/220px-Jet_-_Get_Born.jpg"
+			},
+            {
+				"name": "KISS - Detroit Rock City",
+				"link": "https://www.youtube.com/watch?v=4okh7Y25dmQ",
+				"desc": "Good song by an okay band",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Kiss-Destroyer.jpg/220px-Kiss-Destroyer.jpg"
+			},
+            {
+				"name": "Iron Maiden - Run to the Hills",
+				"link": "https://www.youtube.com/watch?v=AMHxf8KoSkY",
+				"desc": "Cool beginning but the chorus isn't really that good.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/3/32/IronMaiden_NumberOfBeast.jpg"
+			},
+            {
+				"name": "Aerosmith - Train Kept a Rollin'",
+				"link": "https://www.youtube.com/watch?v=PWsPwNlclg0",
+				"desc": "Not the best Aerosmith song...",
+				"image": "https://upload.wikimedia.org/wikipedia/en/7/76/Aerosmith_-_Get_Your_Wings.JPG"
+			}
+		],
+        "D": [
+            {
+				"name": "Molly Hatchet - Flirtin' with Disaster",
+				"link": "https://www.youtube.com/watch?v=Ta5hPRmxo8k",
+				"desc": "Cool Guitar parts",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Molly_Hatchet_-_Flirtin%27_with_Disaster.jpg/220px-Molly_Hatchet_-_Flirtin%27_with_Disaster.jpg"
+			},
+            {
+				"name": "Stone Temple Pilots - Vasoline",
+				"link": "https://www.youtube.com/watch?v=ht672-wYelc",
+				"desc": "Probably too low",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Stonetemplepilotspurple.jpeg/220px-Stonetemplepilotspurple.jpeg"
+			},
+            {
+				"name": "R.E.M - Orange Crush",
+				"link": "https://www.youtube.com/watch?v=wPfzuFVuFMk",
+				"desc": "An alright song",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/73/R.E.M._-_Green.jpg/220px-R.E.M._-_Green.jpg"
+			},
+            {
+				"name": "Tribe - Outside",
+				"link": "https://www.youtube.com/watch?v=VSVfEiswFWk",
+				"desc": "Cool guitar parts but that's about it.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/5/52/Tribe_-_Here_at_the_Home.jpg"
+			},
+            {
+				"name": "The Acro-Bats - Day Late, Dollar Short",
+				"link": "https://www.youtube.com/watch?v=NSxeNpYC9sY",
+				"desc": "Not really a fan",
+				"image": "https://m.media-amazon.com/images/I/817fwXNFq4L._SS500_.jpg"
+			},
+            {
+				"name": "The Police - Next To You",
+				"link": "https://www.youtube.com/watch?v=YGbnSW5VPlc",
+				"desc": "Okay.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Police-album-outlandosdamour.jpg/220px-Police-album-outlandosdamour.jpg"
+			},
+            {
+				"name": "The Outlaws - Green Grass & High Tides",
+				"link": "https://www.youtube.com/watch?v=cz2CAtExXgQ",
+				"desc": "Why is it so hard aaaaaa. Good guitar parts.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/The_Outlaw_-_Outlaws.jpg/220px-The_Outlaw_-_Outlaws.jpg"
+			},
+            {
+				"name": "Honest Bob and the Factory-to-Dealer Incentives - I Get By",
+				"link": "https://www.youtube.com/watch?v=AA3GWpU49a4",
+				"desc": "Some parts are good and some parts are just okay",
+				"image": "https://images-na.ssl-images-amazon.com/images/I/51jBsRrx%2BzL._SX466_.jpg"
+			},
+            {
+				"name": "The Mother Hips - Time We Had",
+				"link": "https://www.youtube.com/watch?v=28HxEHxVu2A",
+				"desc": "amongus album *cough* kinda a boring song",
+				"image": "https://upload.wikimedia.org/wikipedia/en/a/a6/The_Mother_Hips_-_KTCF.jpg"
+			},
+            {
+				"name": "The Hives - Main Offender",
+				"link": "https://www.youtube.com/watch?v=LAfL-dkovmA",
+				"desc": "Is he singing or shouting?",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Veni_Vidi_Vicious.jpg/220px-Veni_Vidi_Vicious.jpg"
+			},
+            {
+				"name": "The Ramones - Blitzkrieg Bop",
+				"link": "https://www.youtube.com/watch?v=NQDPx_k66w4",
+				"desc": "The \"Hey Ho\" parts are cool but the rest of the singing is poopy.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Ramones_-_Ramones_cover.jpg/220px-Ramones_-_Ramones_cover.jpg"
+			},
+            {
+				"name": "Beastie Boys - Sabotage",
+				"link": "https://www.youtube.com/watch?v=a64cJiGKr7c",
+				"desc": "Not really a good song for Rock Band and overall a weaker Beastie Boys song.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Beastie_Boys_Ill_Communication.jpg/220px-Beastie_Boys_Ill_Communication.jpg"
+			},
+            {
+				"name": "The Konks - 29 Fingers",
+				"link": "https://www.youtube.com/watch?v=4r4kaRTmpt8",
+				"desc": "An alright song until they start saying \"We're the Konks\"",
+				"image": "https://img.discogs.com/3-I-f4BLXB0u-c4mOfx236eWk_Q=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2504243-1287934701.jpeg.jpg"
+			}
+		],
+        "F": [
+            {
+				"name": "Pixies - Wave of Mutilation",
+				"link": "https://www.youtube.com/watch?v=RuHeAs0rw5M",
+				"desc": "Eh",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Pixies-Doolittle.jpg/220px-Pixies-Doolittle.jpg"
+			},
+            {
+				"name": "Fall Out Boy - Dead On Arival",
+				"link": "https://www.youtube.com/watch?v=qL02p9KhABo",
+				"desc": "Why do they keep including Fall Out Boy songs in Rock Band games?",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Take_This_To_Your_Grave.jpg/220px-Take_This_To_Your_Grave.jpg"
+			},
+            {
+				"name": "Freezepop - Brainpower",
+				"link": "https://youtu.be/r2zGcAbXi5g?t=33",
+				"desc": "It's fine, but it shouldn't have been on Rock Band",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Future3perfect.jpg/220px-Future3perfect.jpg"
+			},
+            {
+				"name": "The New Pornographers",
+				"link": "https://www.youtube.com/watch?v=767O655FF-E",
+				"desc": "A song that's as good as their name.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/The_New_Pornographers_Electric_Version.jpg/220px-The_New_Pornographers_Electric_Version.jpg"
+			},
+            {
+				"name": "Timmy and The Lords Of The Underworld - Timmy and The Lords Of The Underworld",
+				"link": "https://youtu.be/Vs8G95qsnwE?t=17",
+				"desc": "I mean it's a joke song, where'd you expect it to go?",
+				"image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Timmy_and_the_Lords_of_the_Underworld.jpg/220px-Timmy_and_the_Lords_of_the_Underworld.jpg"
+			},
+            {
+				"name": "Yeah Yeah Yeahs - Maps",
+				"link": "https://www.youtube.com/watch?v=gYsJPGAfM98",
+				"desc": "Oh my goddddd its soooo baaaad MAAAHAAAHHAAHAHAHAAPPPZZZZ. It sucks.",
+				"image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Yeah_Yeah_Yeahs_-_Fever_to_Tell.png"
+			}
+		]
+        
+	}
+}

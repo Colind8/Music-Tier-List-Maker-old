@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="MTLM is an interactable tier list maker using basic JSON.">
+        <meta name="keywords" content="Tier List, Maker, Music, Interactable, Tier, List, Tiers, Rank, Ranks">
+        <meta name="author" content="Colind8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title id="doctitle">Music Tier List Maker</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+<body>
+
+<h1 id="title">Title</h1> 
+<h4 id="author">Author</h4>
+<p id="description">Description</p>
+
+<div id="data_edit_buttons" style="text-align:center;width: 300px;margin: 0 auto;">
+<button onclick="edit_title()">Edit Title</button>
+<button onclick="edit_author()">Edit Author</button>
+<button onclick="edit_desc()">Edit Description</button>
+<button onclick="edit_rankings()" id="rankings">Enable Rankings</button>
+</div>
+<div id="data_edit_title" style="text-align:center;width: 300px;margin: 0 auto;">
+<input id="data_title_form">
+<button onclick="data_title_submit()">Submit</button>
+</div>
+<div id="data_edit_author" style="text-align:center;width: 300px;margin: 0 auto;">
+<input id="data_author_form">
+<button onclick="data_author_submit()">Submit</button>
+</div>
+<div id="data_edit_desc" style="text-align:center;width: 300px;margin: 0 auto;">
+<input id="data_desc_form">
+<button onclick="data_desc_submit()">Submit</button>
+</div>
+    
+<table id="tierlist">
+
+</table>
+
+<div id="additems">
+<p>Add item:</p>
+<form id="tiers_form">
+<label>Tier: </label>
+<select id="tiers_tier_form">
+    <option value="S">S Tier</option>
+    <option value="A">A Tier</option>
+    <option value="B">B Tier</option>
+    <option value="C">C Tier</option>
+    <option value="D">D Tier</option>
+    <option value="F">F Tier</option>
+</select>
+<br>
+<label>Name: </label>
+<input id="tiers_name_form">
+<br>
+<label>Description: </label>
+<input id="tiers_desc_form">
+<br>
+<label>Link: </label>
+<input id="tiers_link_form">
+<br>
+<label>Image URL: </label>
+<input id="tiers_image_form">
+<br>
+</form>
+<button onclick="tiers_submit()">Add Item</button>
+</div>
+    
+<br>
+<br>
+<h3>Save/Load</h3>
+<p>As you make changes to your tier list, the "Generated URL" will automatically update. If you want to load a URL to the editor, simply paste the URL into the same box and click "Load URL to editor." Make sure to paste the URL exactly as it is given to you or else it won't load properly.</p>
+<label>Generated URL:</label>
+<input id="generated_code" onclick="select_code()">
+<button onclick="load_code()">Load URL to editor</button>
+
+<footer>
+<hr></hr>
+<p>Music Tier List Maker by Colind8</p>
+<a href="https://Music-Tier-List-Maker.colind8.repl.co">Create your own</a>
+</footer>
+
+<script src="editor.js"></script>
+</body>

@@ -1,0 +1,71 @@
+{
+    "data": {
+        "title": "",
+        "desc": "",
+        "author": "",
+        "showrankings": ""
+    },
+    "tiers": {
+        "S": [
+            {
+                "name": "",
+                "link": "",
+                "desc": "",
+                "image": ""
+            },
+            {
+                "name": "",
+                "link": "",
+                "desc": "",
+                "image": ""
+            },
+            {
+                "name": "",
+                "link": "",
+                "desc": "",
+                "image": ""
+            }
+        ],
+        "A": [
+            {
+                "name": "",
+                "link": "",
+                "desc": "",
+                "image": ""
+            }
+        ],
+        "B": [
+            {
+                "name": "",
+                "link": "",
+                "desc": "",
+                "image": ""
+            }
+        ],
+        "C": [
+            {
+                "name": "",
+                "link": "",
+                "desc": "",
+                "image": ""
+            }
+        ],
+        "D": [
+            {
+                "name": "",
+                "link": "",
+                "desc": "",
+                "image": ""
+            }
+        ],
+        "F": [
+            {
+                "name": "",
+                "link": "",
+                "desc": "",
+                "image": ""
+            }
+        ]
+        
+    }
+}

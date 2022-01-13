@@ -1,0 +1,141 @@
+body {
+    background-color: #323240;
+    color: #cfbfbf;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+a, a:visited {
+    color:#cc6666;
+}
+
+a:hover {
+    color:#ff8080;
+}
+
+#title {
+    text-align: center;
+}
+
+#author {
+    text-align: center;
+    font-style: italic;
+}
+
+#description {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#tiername {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.songdesc {
+    text-align: center;
+    font-size: 12px;
+}
+
+#additems {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+table {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-style: solid;
+}
+
+td {
+    display: inline-block;
+}
+
+.stier {
+    background-color: #37370a
+}
+.atier {
+    background-color: #18380a
+}
+.btier {
+    background-color: #0a382a
+}
+.ctier {
+    background-color: #0a1a38
+}
+.dtier {
+    background-color: #2c0a38
+}
+.ftier {
+    background-color: #380a0a
+}
+
+img {
+    display: block;
+    max-width: 100px;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.container .tooltip {
+    visibility: hidden;
+    width: 220px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 50%;
+    margin-left: -110px;
+}
+.container .tooltipedit {
+    visibility: hidden;
+    width: 220px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -110px;
+}
+
+.container .tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.container:hover .tooltip {
+  visibility: visible;
+}
+.container:hover .tooltipedit {
+  visibility: visible;
+}
+
+button {
+    text-align: center;
+}
