@@ -67,8 +67,8 @@ for (i = 0; i < obj.tiers.S.length; i++) {
     table += `<p class="songdesc">` +obj.tiers.S[i].desc + `</p>`
 
     //EDITOR FUNCTIONS
-    table += `<button onclick="move_item_left('S',` + i + `)"><-</button>`;
-    table += `<button onclick="move_item_right('S',` + i + `)">-></button>`;
+    table += `<button onclick="move_item_left('S',` + i + `)"><<</button>`;
+    table += `<button onclick="move_item_right('S',` + i + `)">>></button>`;
     table += `<button onclick="delete_item('S',` + i + `)">X</button>`;
     
     //CLOSE CONTAINER
@@ -93,8 +93,8 @@ for (i = 0; i < obj.tiers.A.length; i++) {
     table += `<p class="songdesc">` +obj.tiers.A[i].desc + `</p>`
 
     //EDITOR FUNCTIONS
-    table += `<button onclick="move_item_left('A',` + i + `)"><-</button>`;
-    table += `<button onclick="move_item_right('A',` + i + `)">-></button>`;
+    table += `<button onclick="move_item_left('A',` + i + `)"><<</button>`;
+    table += `<button onclick="move_item_right('A',` + i + `)">>></button>`;
     table += `<button onclick="delete_item('A',` + i + `)">X</button>`;
     
     //CLOSE CONTAINER
@@ -119,8 +119,8 @@ for (i = 0; i < obj.tiers.B.length; i++) {
     table += `<p class="songdesc">` +obj.tiers.B[i].desc + `</p>`
 
     //EDITOR FUNCTIONS
-    table += `<button onclick="move_item_left('B',` + i + `)"><-</button>`;
-    table += `<button onclick="move_item_right('B',` + i + `)">-></button>`;
+    table += `<button onclick="move_item_left('B',` + i + `)"><<</button>`;
+    table += `<button onclick="move_item_right('B',` + i + `)">>></button>`;
     table += `<button onclick="delete_item('B',` + i + `)">X</button>`;
     
     //CLOSE CONTAINER
@@ -145,8 +145,8 @@ for (i = 0; i < obj.tiers.C.length; i++) {
     table += `<p class="songdesc">` +obj.tiers.C[i].desc + `</p>`
 
     //EDITOR FUNCTIONS
-    table += `<button onclick="move_item_left('C',` + i + `)"><-</button>`;
-    table += `<button onclick="move_item_right('C',` + i + `)">-></button>`;
+    table += `<button onclick="move_item_left('C',` + i + `)"><<</button>`;
+    table += `<button onclick="move_item_right('C',` + i + `)">>></button>`;
     table += `<button onclick="delete_item('C',` + i + `)">X</button>`;
     
     //CLOSE CONTAINER
@@ -171,8 +171,8 @@ for (i = 0; i < obj.tiers.D.length; i++) {
     table += `<p class="songdesc">` +obj.tiers.D[i].desc + `</p>`
 
     //EDITOR FUNCTIONS
-    table += `<button onclick="move_item_left('D',` + i + `)"><-</button>`;
-    table += `<button onclick="move_item_right('D',` + i + `)">-></button>`;
+    table += `<button onclick="move_item_left('D',` + i + `)"><<</button>`;
+    table += `<button onclick="move_item_right('D',` + i + `)">>></button>`;
     table += `<button onclick="delete_item('D',` + i + `)">X</button>`;
     
     //CLOSE CONTAINER
@@ -197,8 +197,8 @@ for (i = 0; i < obj.tiers.F.length; i++) {
     table += `<p class="songdesc">` +obj.tiers.F[i].desc + `</p>`
 
     //EDITOR FUNCTIONS
-    table += `<button onclick="move_item_left('F',` + i + `)"><-</button>`;
-    table += `<button onclick="move_item_right('F',` + i + `)">-></button>`;
+    table += `<button onclick="move_item_left('F',` + i + `)"><<</button>`;
+    table += `<button onclick="move_item_right('F',` + i + `)">>></button>`;
     table += `<button onclick="delete_item('F',` + i + `)">X</button>`;
     
     //CLOSE CONTAINER
