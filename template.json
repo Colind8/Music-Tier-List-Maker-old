@@ -3,69 +3,82 @@
         "title": "",
         "desc": "",
         "author": "",
+        "version": 1,
         "showrankings": ""
     },
-    "tiers": {
-        "S": [
-            {
+    "tiers": [
+        {
+            "tiername": "S",
+            "tiercolor": "#37370a",
+            "tierdata": [
+                {
                 "name": "",
                 "link": "",
                 "desc": "",
                 "image": ""
-            },
-            {
+                }
+            ]
+        },
+        {
+            "tiername": "A",
+            "tiercolor": "#18380a",
+            "tierdata": [
+                {
                 "name": "",
                 "link": "",
                 "desc": "",
                 "image": ""
-            },
-            {
+                }
+            ]
+        },
+        {
+            "tiername": "B",
+            "tiercolor": "#0a382a",
+            "tierdata": [
+                {
                 "name": "",
                 "link": "",
                 "desc": "",
                 "image": ""
-            }
-        ],
-        "A": [
-            {
+                }
+            ]
+        },
+        {
+            "tiername": "C",
+            "tiercolor": "#0a1a38",
+            "tierdata": [
+                {
                 "name": "",
                 "link": "",
                 "desc": "",
                 "image": ""
-            }
-        ],
-        "B": [
-            {
+                }
+            ]
+        },
+        {
+            "tiername": "D",
+            "tiercolor": "#2c0a38",
+            "tierdata": [
+                {
                 "name": "",
                 "link": "",
                 "desc": "",
                 "image": ""
-            }
-        ],
-        "C": [
-            {
+                }
+            ]
+        },
+        {
+            "tiername": "F",
+            "tiercolor": "#380a0a",
+            "tierdata": [
+                {
                 "name": "",
                 "link": "",
                 "desc": "",
                 "image": ""
-            }
-        ],
-        "D": [
-            {
-                "name": "",
-                "link": "",
-                "desc": "",
-                "image": ""
-            }
-        ],
-        "F": [
-            {
-                "name": "",
-                "link": "",
-                "desc": "",
-                "image": ""
-            }
-        ]
+                }
+            ]
+        }
         
-    }
+    ]
 }

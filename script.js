@@ -6,7 +6,11 @@ if (urlParams.has('file')) {
     file = urlParams.get('file')
     console.log("LOADING FILE: " + file);
     var obj = JSON.parse(window.atob(file));
-    build();
+    console.log(obj);
+    if (obj.data.version == 1) {
+        build1();
+    }
+    
     
 }
 
@@ -19,8 +23,8 @@ if (urlParams.has('file')) {
 
 //document.getElementById("code").innerHTML = window.btoa(this.responseText);
 
-function build() {
-console.log("Building Tier List...");
+function build1() {
+console.log("Building Tier List... (VERSION 1.0)");
 console.log("Adding Data...");
 //META DATA
 document.getElementById("title").innerHTML = obj.data.title;
@@ -31,127 +35,33 @@ document.getElementById("description").innerHTML = obj.data.desc;
 //WRITE TABLE
 console.log("Creating Table...");
 rank = 0;
-table = `<tr class="stier"><th id="tiername">S</th>`
-for (i = 0; i < obj.tiers.S.length; i++) {
-    rank++;
-    //CREATE CONTAINER
-    table += `<td><div class="container">`;
-    //ADD LINK
-    table += `<a href="` + obj.tiers.S[i].link + `" target="_blank">` 
-    //CREATE IMAGE
-    table += `<img src="` + obj.tiers.S[i].image + `" alt="` + obj.tiers.S[i].name + `"></a>`
-    //CREATE OVERLAY
-    table += `<span class="tooltip">`
-    //ADD METADATA
-    table += `<h4>` + obj.tiers.S[i].name + `</h4>`
-    if (obj.data.showrankings == "true") {
-        table += `#` + rank   
-    }
-    table += `<p class="songdesc">` +obj.tiers.S[i].desc + `</p>`
-    //CLOSE CONTAINER
-    table += `</span></div></td>`
-}
-table += `</tr><tr class="atier"><th id="tiername">A</th>`
-for (i = 0; i < obj.tiers.A.length; i++) {
-    rank++;
-    //CREATE CONTAINER
-    table += `<td><div class="container">`;
-            //ADD LINK
-            table += `<a href="` + obj.tiers.A[i].link + `" target="_blank">` 
-            //CREATE IMAGE
-            table += `<img src="` + obj.tiers.A[i].image + `" alt="` + obj.tiers.A[i].name + `"></a>`
-            //CREATE OVERLAY
-            table += `<span class="tooltip">`
-            //ADD METADATA
-            table += `<h4>` + obj.tiers.A[i].name + `</h4>`
-            if (obj.data.showrankings == "true") {
-                table += `#` + rank   
-            }
-            table += `<p class="songdesc">` +obj.tiers.A[i].desc + `</p>`
-            //CLOSE CONTAINER
-            table += `</span></div></td>`
+table = "";
+for (i2 = 0; i2 < obj.tiers.length; i2++) {
+    console.log(`Build ${obj.tiers[i2].tiername}`)
+    table += `<tr style="background-color: ` + obj.tiers[i2].tiercolor + `"><th id="tiername">`+obj.tiers[i2].tiername+`</th>`
+    for (i = 0; i < obj.tiers[i2].tierdata.length; i++) {
+        rank++;
+        //CREATE CONTAINER
+        table += `<td><div class="container">`;
+        //ADD LINK
+        table += `<a href="` + obj.tiers[i2].tierdata[i].link + `" target="_blank">` 
+        //CREATE IMAGE
+        table += `<img src="` + obj.tiers[i2].tierdata[i].image + `" alt="` + obj.tiers[i2].tierdata[i].name + `"></a>`
+        //CREATE OVERLAY
+        table += `<span class="tooltip">`
+        //ADD METADATA
+        table += `<h4>` + obj.tiers[i2].tierdata[i].name + `</h4>`
+        if (obj.data.showrankings == "true") {
+            table += `#` + rank   
         }
-table += `</tr><tr class="btier"><th id="tiername">B</th>`
-for (i = 0; i < obj.tiers.B.length; i++) {
-            rank++;
-            //CREATE CONTAINER
-            table += `<td><div class="container">`;
-            //ADD LINK
-            table += `<a href="` + obj.tiers.B[i].link + `" target="_blank">` 
-            //CREATE IMAGE
-            table += `<img src="` + obj.tiers.B[i].image + `" alt="` + obj.tiers.B[i].name + `"></a>`
-            //CREATE OVERLAY
-            table += `<span class="tooltip">`
-            //ADD METADATA
-            table += `<h4>` + obj.tiers.B[i].name + `</h4>`
-            if (obj.data.showrankings == "true") {
-                table += `#` + rank   
-            }
-            table += `<p class="songdesc">` +obj.tiers.B[i].desc + `</p>`
-            //CLOSE CONTAINER
-            table += `</span></div></td>`
-        }
-table += `</tr><tr class="ctier"><th id="tiername">C</th>`
-for (i = 0; i < obj.tiers.C.length; i++) {
-    rank++;
-    //CREATE CONTAINER
-    table += `<td><div class="container">`;
-    //ADD LINK
-    table += `<a href="` + obj.tiers.C[i].link + `" target="_blank">` 
-    //CREATE IMAGE
-    table += `<img src="` + obj.tiers.C[i].image + `" alt="` + obj.tiers.C[i].name + `"></a>`
-    //CREATE OVERLAY
-    table += `<span class="tooltip">`
-    //ADD METADATA
-    table += `<h4>` + obj.tiers.C[i].name + `</h4>`
-    if (obj.data.showrankings == "true") {
-        table += `#` + rank   
+        table += `<p class="songdesc">` +obj.tiers[i2].tierdata[i].desc + `</p>`
+        //CLOSE CONTAINER
+        table += `</span></div></td>`
     }
-    table += `<p class="songdesc">` +obj.tiers.C[i].desc + `</p>`
-    //CLOSE CONTAINER
-    table += `</span></div></td>`
+    
+    table += `</tr>`
 }
-table += `</tr><tr class="dtier"><th id="tiername">D</th>`
-for (i = 0; i < obj.tiers.D.length; i++) {
-    rank++;
-    //CREATE CONTAINER
-    table += `<td><div class="container">`;
-    //ADD LINK
-    table += `<a href="` + obj.tiers.D[i].link + `" target="_blank">` 
-    //CREATE IMAGE
-    table += `<img src="` + obj.tiers.D[i].image + `" alt="` + obj.tiers.D[i].name + `"></a>`
-    //CREATE OVERLAY
-    table += `<span class="tooltip">`
-    //ADD METADATA
-    table += `<h4>` + obj.tiers.D[i].name + `</h4>`
-    if (obj.data.showrankings == "true") {
-        table += `#` + rank   
-    }
-    table += `<p class="songdesc">` +obj.tiers.D[i].desc + `</p>`
-    //CLOSE CONTAINER
-    table += `</span></div></td>`
-}
-table += `</tr><tr class="ftier"><th id="tiername">F</th>`
-for (i = 0; i < obj.tiers.F.length; i++) {
-    rank++;
-    //CREATE CONTAINER
-    table += `<td><div class="container">`;
-    //ADD LINK
-    table += `<a href="` + obj.tiers.F[i].link + `" target="_blank">` 
-    //CREATE IMAGE
-    table += `<img src="` + obj.tiers.F[i].image + `" alt="` + obj.tiers.F[i].name + `"></a>`
-    //CREATE OVERLAY
-    table += `<span class="tooltip">`
-    //ADD METADATA
-    table += `<h4>` + obj.tiers.F[i].name + `</h4>`
-    if (obj.data.showrankings == "true") {
-        table += `#` + rank
-    }
-    table += `<p class="songdesc">` +obj.tiers.F[i].desc + `</p>`
-    //CLOSE CONTAINER
-    table += `</span></div></td>`
-}
-table += "</tr></table>"
+//table += "</table>"
 
 //PASTE TABLE
 document.getElementById("tierlist").innerHTML = table;

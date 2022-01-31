@@ -1,40 +1,69 @@
 document.getElementById("data_edit_title").style.visibility = "hidden";
 document.getElementById("data_edit_author").style.visibility = "hidden";
 document.getElementById("data_edit_desc").style.visibility = "hidden";
+document.getElementById("tier_add").style.visibility = "hidden";
+document.getElementById("tier_edit").style.visibility = "hidden";
+document.getElementById("tier_edit_name").style.visibility = "hidden";
 
 var obj = {
     "data": {
         "title": "Title",
         "desc": "Description",
         "author": "Author",
+        "version": 1,
         "showrankings": "false"
     },
-    "tiers": {
-        "S": [
-            {
+    "tiers": [
+        {
+            "tiername": "S",
+            "tiercolor": "#37370a",
+            "tierdata": [
+                {
                 "name": "Sample",
-                "link": "https://www.youtube.com/watch?v=HIhYgXwpy4c",
-                "desc": "You can remove this if you want",
-                "image": "https://st3.depositphotos.com/9614272/14788/v/450/depositphotos_147889189-stock-illustration-tv-test-image.jpg"
-            }
-        ],
-        "A": [
-        ],
-        "B": [
-        ],
-        "C": [
-        ],
-        "D": [
-        ],
-        "F": [
-        ]
-    }
+                "link": "https://www.youtube.com/watch?v=R5YOY8Jtgnc",
+                "desc": "Remove this if you want",
+                "image": "https://ih0.redbubble.net/image.377239350.9528/flat,800x800,075,f.u1.jpg"
+                }
+            ]
+        },
+        {
+            "tiername": "A",
+            "tiercolor": "#18380a",
+            "tierdata": [
+            ]
+        },
+        {
+            "tiername": "B",
+            "tiercolor": "#0a382a",
+            "tierdata": [
+            ]
+        },
+        {
+            "tiername": "C",
+            "tiercolor": "#0a1a38",
+            "tierdata": [
+            ]
+        },
+        {
+            "tiername": "D",
+            "tiercolor": "#2c0a38",
+            "tierdata": [
+            ]
+        },
+        {
+            "tiername": "F",
+            "tiercolor": "#380a0a",
+            "tierdata": [
+            ]
+        }
+        
+    ]
 };
 
-build();
+build1();
 console.log(obj);
 
-
+/*
 function build() {
 
 if (obj.data.showrankings == "true") {
@@ -208,6 +237,70 @@ table += "</tr></table>"
 document.getElementById("tierlist").innerHTML = table;
 build_code();
 }
+*/
+function build1() {
+    
+if (obj.data.showrankings == "true") {
+    document.getElementById("rankings").innerHTML = "Disable Rankings";
+} else {
+    document.getElementById("rankings").innerHTML = "Enable Rankings";
+}
+console.log("Building Tier List... (VERSION 1.0)");
+console.log("Adding Data...");
+//META DATA
+document.getElementById("title").innerHTML = obj.data.title;
+document.getElementById("doctitle").innerHTML = obj.data.title + " | Music Tier List Maker";
+document.getElementById("author").innerHTML = "By " + obj.data.author;
+document.getElementById("description").innerHTML = obj.data.desc;
+
+//WRITE TABLE
+console.log("Creating Table...");
+rank = 0;
+table = "";
+additemtiers = "";
+for (i2 = 0; i2 < obj.tiers.length; i2++) {
+    console.log(`Build ${obj.tiers[i2].tiername}`)
+    additemtiers += `<option value="${i2}">${obj.tiers[i2].tiername} Tier</option>`;
+    table += `<tr style="background-color: ` + obj.tiers[i2].tiercolor + `"><th id="tiername">`+obj.tiers[i2].tiername+`</th>`
+    for (i = 0; i < obj.tiers[i2].tierdata.length; i++) {
+        rank++;
+        //CREATE CONTAINER
+        table += `<td><div class="container">`;
+        //ADD LINK
+        table += `<a href="` + obj.tiers[i2].tierdata[i].link + `" target="_blank">` 
+        //CREATE IMAGE
+        table += `<img src="` + obj.tiers[i2].tierdata[i].image + `" alt="` + obj.tiers[i2].tierdata[i].name + `"></a>`
+        //CREATE OVERLAY
+        table += `<span class="tooltipedit">`
+        //ADD METADATA
+        table += `<h4>` + obj.tiers[i2].tierdata[i].name + `</h4>`
+        if (obj.data.showrankings == "true") {
+            table += `#` + rank   
+        }
+        table += `<p class="songdesc">` +obj.tiers[i2].tierdata[i].desc + `</p>`
+        
+        //EDITOR FUNCTIONS
+        table += `<button onclick="move_item_left(${i2},${i})"><<</button>`;
+        table += `<button onclick="move_item_right(${i2},${i})">>></button>`;
+        table += `<button onclick="delete_item(${i2},${i})">X</button>`;
+        
+        //CLOSE CONTAINER
+        table += `</span></div></td>`
+    }
+    
+    table += `</tr>`
+    
+}
+//table += "</table>"
+
+//PASTE TABLE
+document.getElementById("tiers_tier_form").innerHTML = additemtiers;
+document.getElementById("tiers_tier_edit_form").innerHTML = additemtiers;
+document.getElementById("tierlist").innerHTML = table;
+console.log("Tier List Built");
+build_code();
+}
+
 function build_code() {
     jsonobj = JSON.stringify(obj);
     jsonobj = window.btoa(jsonobj);
@@ -232,33 +325,80 @@ function edit_rankings() {
     } else {
         obj.data.showrankings = "true";
     }
-    build();
+    build1();
+}
+function button_add_tier() {
+    document.getElementById("tier_edit_buttons").style.visibility = "hidden";
+    document.getElementById("tier_add").style.visibility = "visible";
+}
+function button_edit_tier() {
+    document.getElementById("tier_edit_buttons").style.visibility = "hidden";
+    document.getElementById("tier_edit").style.visibility = "visible";
+}
+function tier_edit_submit() {
+    document.getElementById("tier_edit_buttons").style.visibility = "visible";
+    document.getElementById("tier_edit").style.visibility = "hidden";
+}
+function button_edit_name_tier() {
+    let tier = document.getElementById("tiers_tier_edit_form").value;
+    document.getElementById("tier_edit_name").style.visibility = "visible";
+    document.getElementById("tier_edit_name_form").value = obj.tiers[tier].tiername;
+    document.getElementById("tier_edit_name_form_color").value = obj.tiers[tier].tiercolor;
+    document.getElementById("tier_edit").style.visibility = "hidden";
 }
 
 function data_title_submit() {
     let x = document.getElementById("data_title_form").value;
     obj.data.title = x;
-    build();
+    build1();
     document.getElementById("data_edit_buttons").style.visibility = "visible";
     document.getElementById("data_edit_title").style.visibility = "hidden";
 }
 function data_author_submit() {
     let x = document.getElementById("data_author_form").value;
     obj.data.author = x;
-    build();
+    build1();
     document.getElementById("data_edit_buttons").style.visibility = "visible";
     document.getElementById("data_edit_author").style.visibility = "hidden";
 }
 function data_desc_submit() {
     let x = document.getElementById("data_desc_form").value;
     obj.data.desc = x;
-    build();
+    build1();
     document.getElementById("data_edit_buttons").style.visibility = "visible";
     document.getElementById("data_edit_desc").style.visibility = "hidden";
 }
+function tier_add_submit() {
+    let x = document.getElementById("tier_add_form").value;
+    let y = document.getElementById("tier_add_form_color").value;
+    obj.tiers.push({
+        "tiername": x,
+        "tiercolor": y,
+        "tierdata": [
+        ]
+    });
+    build1();
+    document.getElementById("tier_edit_buttons").style.visibility = "visible";
+    document.getElementById("tier_add").style.visibility = "hidden";
+}
+function tier_edit_name_submit() {
+    let tier = document.getElementById("tiers_tier_edit_form").value
+    let x = document.getElementById("tier_edit_name_form").value;
+    let y = document.getElementById("tier_edit_name_form_color").value;
+    obj.tiers[tier].tiername = x;
+    obj.tiers[tier].tiercolor = y;
+    build1();
+    document.getElementById("tier_edit").style.visibility = "visible";
+    document.getElementById("tier_edit_name").style.visibility = "hidden";
+}
+function button_edit_delete_tier() {
+    let tier = document.getElementById("tiers_tier_edit_form").value
+    obj.tiers.splice(tier,1);
+    build1();
+}
 
 function tiers_submit() {
-    let tier = document.getElementById("tiers_tier_form").value;
+    let tier = document.getElementById("tiers_tier_form").value; //0, 1, 2
     let name = document.getElementById("tiers_name_form").value;
     let link = document.getElementById("tiers_link_form").value;
     let desc = document.getElementById("tiers_desc_form").value;
@@ -274,208 +414,53 @@ function tiers_submit() {
     item.link = link;
     item.desc = desc;
     item.image = image;
-
-    switch (tier) {
-        case "S":
-            obj.tiers.S.push(item);
-            break;
-        case "A":
-            obj.tiers.A.push(item);
-            break;
-        case "B":
-            obj.tiers.B.push(item);
-            break;
-        case "C":
-            obj.tiers.C.push(item);
-            break;
-        case "D":
-            obj.tiers.D.push(item);
-            break;
-        case "F":
-            obj.tiers.F.push(item);
-            break;
-        
-    }
+    obj.tiers[tier].tierdata.push(item)
     
     console.log(obj);
-    build();
+    build1();
     document.getElementById("tiers_form").reset();
 }
 
 function move_item_left(tier, index) {
-    if(tier == "S" && index == 0) {
+    if(tier == 0 && index == 0) {
         return;
     }
     
     if(index == 0) {
-        switch (tier) {
-            case "A":
-                c = obj.tiers.A.shift();
-                obj.tiers.S.push(c);
-                break;
-            case "B":
-                c = obj.tiers.B.shift();
-                obj.tiers.A.push(c);
-                break;
-            case "C":
-                c = obj.tiers.C.shift();
-                obj.tiers.B.push(c);
-                break;
-            case "D":
-                c = obj.tiers.D.shift();
-                obj.tiers.C.push(c);
-                break;
-            case "F":
-                c = obj.tiers.F.shift();
-                obj.tiers.D.push(c);
-                break;
-            
-        }
+        c = obj.tiers[tier].tierdata.shift();
+        obj.tiers[tier - 1].tierdata.push(c);
+        console.log(obj)
     } else {
-        switch (tier) {
-            case "S":
-                a = obj.tiers.S[index];
-                b = obj.tiers.S[index - 1];
-                obj.tiers.S[index - 1] = a;
-                obj.tiers.S[index] = b;
-                break;
-            case "A":
-                a = obj.tiers.A[index];
-                b = obj.tiers.A[index - 1];
-                obj.tiers.A[index - 1] = a;
-                obj.tiers.A[index] = b;
-                break;
-            case "B":
-                a = obj.tiers.B[index];
-                b = obj.tiers.B[index - 1];
-                obj.tiers.B[index - 1] = a;
-                obj.tiers.B[index] = b;
-                break;
-            case "C":
-                a = obj.tiers.C[index];
-                b = obj.tiers.C[index - 1];
-                obj.tiers.C[index - 1] = a;
-                obj.tiers.C[index] = b;
-                break;
-            case "D":
-                a = obj.tiers.D[index];
-                b = obj.tiers.D[index - 1];
-                obj.tiers.D[index - 1] = a;
-                obj.tiers.D[index] = b;
-                break;
-            case "F":
-                a = obj.tiers.F[index];
-                b = obj.tiers.F[index - 1];
-                obj.tiers.F[index - 1] = a;
-                obj.tiers.F[index] = b;
-                break;
-            
-        }
+        a = obj.tiers[tier].tierdata[index];
+        b = obj.tiers[tier].tierdata[index - 1];
+        obj.tiers[tier].tierdata[index - 1] = a;
+        obj.tiers[tier].tierdata[index] = b;
+        
     }
-    build();
+    build1();
 }
 function move_item_right(tier, index) {
     console.log(obj);
-    if(tier == "F" && index == obj.tiers.F.length - 1) {
+    if((tier == obj.tiers.length - 1) && (index == obj.tiers[tier].tierdata.length - 1)) {
         return;
     }
     
-    switch (tier) {
-        case "S":
-            if(index == obj.tiers.S.length - 1) {
-                c = obj.tiers.S.pop();
-                obj.tiers.A.unshift(c);
-                break;
-            } else {
-                a = obj.tiers.S[index];
-                b = obj.tiers.S[index + 1];
-                obj.tiers.S[index + 1] = a;
-                obj.tiers.S[index] = b;
-                break;
-            }
-        case "A":
-            if(index == obj.tiers.A.length - 1) {
-                c = obj.tiers.A.pop();
-                obj.tiers.B.unshift(c);
-                break;
-            } else {
-                a = obj.tiers.A[index];
-                b = obj.tiers.A[index + 1];
-                obj.tiers.A[index + 1] = a;
-                obj.tiers.A[index] = b;
-                break;
-            }
-        case "B":
-            if(index == obj.tiers.B.length - 1) {
-                c = obj.tiers.B.pop();
-                obj.tiers.C.unshift(c);
-                break;
-            } else {
-                a = obj.tiers.B[index];
-                b = obj.tiers.B[index + 1];
-                obj.tiers.B[index + 1] = a;
-                obj.tiers.B[index] = b;
-                break;
-            }
-        case "C":
-            if(index == obj.tiers.C.length - 1) {
-                c = obj.tiers.C.pop();
-                obj.tiers.D.unshift(c);
-                break;
-            } else {
-                a = obj.tiers.C[index];
-                b = obj.tiers.C[index + 1];
-                obj.tiers.C[index + 1] = a;
-                obj.tiers.C[index] = b;
-                break;
-            }
-        case "D":
-            if(index == obj.tiers.D.length - 1) {
-                c = obj.tiers.D.pop();
-                obj.tiers.F.unshift(c);
-                break;
-            } else {
-                a = obj.tiers.D[index];
-                b = obj.tiers.D[index + 1];
-                obj.tiers.D[index + 1] = a;
-                obj.tiers.D[index] = b;
-                break;
-            }
-        case "F":
-            a = obj.tiers.F[index];
-            b = obj.tiers.F[index + 1];
-            obj.tiers.F[index + 1] = a;
-            obj.tiers.F[index] = b;
-            break;
+    if(index == obj.tiers[tier].tierdata.length - 1) {
+        c = obj.tiers[tier].tierdata.pop();
+        obj.tiers[tier + 1].tierdata.unshift(c);
+    } else {
+        a = obj.tiers[tier].tierdata[index];
+        b = obj.tiers[tier].tierdata[index + 1];
+        obj.tiers[tier].tierdata[index + 1] = a;
+        obj.tiers[tier].tierdata[index] = b;
     }
     
     console.log(obj);
-    build();
+    build1();
 }
 function delete_item(tier, index) {
-    switch (tier) {
-        case "S":
-            obj.tiers.S.splice(index,1);
-            break;
-        case "A":
-            obj.tiers.A.splice(index,1);
-            break;
-        case "B":
-            obj.tiers.B.splice(index,1);
-            break;
-        case "C":
-            obj.tiers.C.splice(index,1);
-            break;
-        case "D":
-            obj.tiers.D.splice(index,1);
-            break;
-        case "F":
-            obj.tiers.F.splice(index,1);
-            break;
-        
-    }
-
-    build();
+    obj.tiers[tier].tierdata.splice(index,1);
+    build1();
 }
 
 function select_code() {
@@ -491,7 +476,7 @@ function load_code() {
         console.log(c);
         d = window.atob(c)
         obj = JSON.parse(d);
-        build();
+        build1();
     } else {
         console.log("Incorrect code!")
     }

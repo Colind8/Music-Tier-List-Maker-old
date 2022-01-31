@@ -45,12 +45,6 @@
 <form id="tiers_form">
 <label>Tier: </label>
 <select id="tiers_tier_form">
-    <option value="S">S Tier</option>
-    <option value="A">A Tier</option>
-    <option value="B">B Tier</option>
-    <option value="C">C Tier</option>
-    <option value="D">D Tier</option>
-    <option value="F">F Tier</option>
 </select>
 <br>
 <label>Name: </label>
@@ -68,7 +62,33 @@
 </form>
 <button onclick="tiers_submit()">Add Item</button>
 </div>
+
+<!-- ADD/EDIT TIER -->
+<div id="tier_edit_buttons" style="text-align:center;width: 300px;margin: 0 auto;">
+<button onclick="button_add_tier()">Add a Tier</button>
+<button onclick="button_edit_tier()">Edit a Tier</button>
+</div>
     
+<div id="tier_add" style="text-align:center;width: 300px;margin: 0 auto;">
+<input id="tier_add_form" placeholder="[TIER NAME]">
+<input type="color" id="tier_add_form_color" value="#18380a">
+<button onclick="tier_add_submit()">Submit</button>
+</div>
+
+<div id="tier_edit" style="text-align:center;width: 300px;margin: 0 auto;">
+<select id="tiers_tier_edit_form">
+</select>
+<button onclick="button_edit_name_tier()">Change name/color</button>
+<button onclick="button_edit_delete_tier()">Delete</button>
+<button onclick="tier_edit_submit()">Done</button>
+</div>
+
+<div id="tier_edit_name" style="text-align:center;width: 300px;margin: 0 auto;">
+<input id="tier_edit_name_form" placeholder="[TIER NAME]">
+<input type="color" id="tier_edit_name_form_color" value="#18380a">
+<button onclick="tier_edit_name_submit()">Submit</button>
+</div>
+<!-- SAVE/LOAD -->
 <br>
 <br>
 <h3>Save/Load</h3>
