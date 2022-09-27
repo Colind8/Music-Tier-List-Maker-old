@@ -304,7 +304,7 @@ build_code();
 function build_code() {
     jsonobj = JSON.stringify(obj);
     jsonobj = window.btoa(jsonobj);
-    document.getElementById("generated_code").value = "https://Music-Tier-List-Maker.colind8.repl.co/?file=" + jsonobj;
+    document.getElementById("generated_code").value = "https://colind8.github.io/Music-Tier-List-Maker/?file=" + jsonobj;
 }
 
 function edit_title() {
@@ -470,7 +470,7 @@ function load_code() {
     a = document.getElementById("generated_code").value
     b = a.slice(0,52)
     console.log("Loading: " + b);
-    if (b.toUpperCase() == "https://Music-Tier-List-Maker.colind8.repl.co/?file=".toUpperCase()) {
+    if (b.toUpperCase() == "https://colind8.github.io/Music-Tier-List-Maker/?file=".toUpperCase()) {
         //replace("https://Music-Tier-List-Maker.colind8.repl.co/?file=", "");
         c = a.substring(52);
         console.log(c);
